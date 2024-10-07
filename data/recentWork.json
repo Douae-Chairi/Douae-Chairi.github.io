@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "img": "recent-1.jpg",
+    "title": "Model photography",
+    "type": "Digital, Photography"
+  },
+  {
+    "id": 1,
+    "img": "recent-3.mp4",
+    "title": "Product videography",
+    "type": "Digital, Videography"
+  },
+  {
+    "id": 2,
+    "img": "recent-2.jpg",
+    "title": "Model photography",
+    "type": "Digital, Photography"
+  },
+  {
+    "id": 3,
+    "img": "recent-4.mp4",
+    "title": "Product videography",
+    "type": "Digital, Videography"
+  },
+  {
+    "id": 4,
+    "img": "recent-5.jpg",
+    "title": "Wedding photography",
+    "type": "Digital, photography"
+  },
+  {
+    "id": 5,
+    "img": "recent-6.mp4",
+    "title": "Wedding videography",
+    "type": "Digital, Videography"
+  }
+]
