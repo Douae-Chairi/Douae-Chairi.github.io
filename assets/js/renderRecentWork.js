@@ -55,7 +55,6 @@ jQuery(document).ready(function () {
     fetch('../../data/recentWork.json').then((r) => {
         return r.json()
     }).then((data) => {
-        console.log(data);
         data.forEach(work => {
             let card = recentWorkCards(work)
             container.append(card)

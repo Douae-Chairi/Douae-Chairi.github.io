@@ -8,30 +8,43 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reservation.css">
   <title>Douae Chairi</title>
 </head>
 
 <body>
+
+  <!-- nav  start -->
   <nav class="navbar navbar-expand-md  fixed-top maine-menu">
     <div class="container">
       <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse">
         <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
       <div id="my-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a></li>
-          <!-- <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Activity</a>
+          <li class="nav-item active"> <a class="nav-link go-to-home" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link go-to-about" href="#about" tabindex="-1"
+              aria-disabled="true">About</a></li>
+          <li class="nav-item"> <a class="nav-link go-to-activities" href="#activity" tabindex="-1"
+              aria-disabled="true">Works</a>
           </li>
-          <li class="nav-item"> <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Portfolio</a>
+          <li class="nav-item"> <a class="nav-link go-to-portfolio" href="#portfolio" tabindex="-1"
+              aria-disabled="true">Portfolio</a>
           </li>
-          <li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1"
-              aria-disabled="true">Testimonial</a></li>
-          <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li> -->
-          <li class="nav-item"> <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a></li>
+          <li class="nav-item"> <a class="nav-link go-to-packages" href="#packages" tabindex="-1"
+            aria-disabled="true">Packages</a>
+        </li>
+          <!-- <li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1"
+              aria-disabled="true">Testimonial</a></li> -->
+          <!-- <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li> -->
+          <li class="nav-item"> <a class="nav-link go-To-Contact-nav" href="#contact" tabindex="-1"
+              aria-disabled="true">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- nav end -->
+
+  <!-- home start -->
   <div class="container-fluid douae-home-banner">
     <div class="card">
       <!-- <img class="card-img" src="assets/img/banner-img.jpg" alt=""> -->
@@ -65,7 +78,9 @@
       </div>
     </div>
   </div>
+  <!-- home end -->
 
+  <!-- pics start -->
   <div id="explore" class="container-fluid douae-two-img">
     <div class="row">
       <div class="col-sm-6 pr-0 pl-0">
@@ -80,7 +95,9 @@
       </div>
     </div>
   </div>
+  <!-- pics end -->
 
+  <!-- ABOUT start -->
   <div class="container-fluid douae-recent-work">
     <div class="container contact-pop">
       <div class="row">
@@ -97,7 +114,7 @@
             <p>Sed do eiusmod tempor incididunt ut labore et dolo magna aliqua. Ut enim ad minim veniam, quis nostd
               exercitation ullamco laboris nisi ut aliquip ex ea mo consequat. Duis aute irure dolor in reprehenderit in
               ullamco.</p>
-            <a href="#" class="btn">CONTACT</a>
+            <a class="btn go-To-Contact">CONTACT</a>
           </div>
         </div>
       </div>
@@ -106,56 +123,15 @@
       <div class="row">
         <h2>Recent works</h2>
         <div id="recentWorkContainer" class="owl-carousel owl-carousel2 owl-theme">
-          <!-- <div>
-            <div class="card"> <img class="card-img" src="assets/img/recent-img1.jpg" alt="">
-              <div class="card-img-overlay"> <a href="#"><img src="assets/img/heart.png" class="heart"
-                    alt="heart icon"></a>
-                <div class="bottom-text">
-                  <h5 class="card-title">Model photography</h5>
-                  <p class="card-text">Digital, Photography</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card"> <img class="card-img" src="assets/img/recent-img2.jpg" alt="">
-              <div class="card-img-overlay"> <a href="#"><img src="assets/img/heart.png" class="heart"
-                    alt="heart icon"></a>
-                <div class="bottom-text">
-                  <h5 class="card-title">Product photography</h5>
-                  <p class="card-text">Digital, Photography</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card"> <img class="card-img" src="assets/img/recent-img3.jpg" alt="">
-              <div class="card-img-overlay"> <a href="#"><img src="assets/img/heart.png" class="heart"
-                    alt="heart icon"></a>
-                <div class="bottom-text">
-                  <h5 class="card-title">Tour and portrait</h5>
-                  <p class="card-text">Digital, Photography</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="card"> <img class="card-img" src="assets/img/recent-img4.jpg" alt="">
-              <div class="card-img-overlay"> <a href="#"><img src="assets/img/heart.png" class="heart"
-                    alt="heart icon"></a>
-                <div class="bottom-text">
-                  <h5 class="card-title">Classical photography</h5>
-                  <p class="card-text">Digital, Photography</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
   </div>
-  </div>
-  <!-- <div class="container-fluid recent douae-portfolio" id="portfolio">
+  <!-- ABOUT end -->
+
+  <!-- portfolio start -->
+
+  <div class="container-fluid recent douae-portfolio" id="portfolio">
     <div class="container">
       <h2>Portfolios</h2>
       <div class="row">
@@ -245,7 +221,12 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <!-- portfolio end -->
+
+  <!-- activities start -->
+
   <!-- <div class="container-fluid douae-recent-work activity">
     <div class="container recent">
       <div class="row">
@@ -285,6 +266,11 @@
       </div>
     </div>
   </div> -->
+
+  <!-- activities end -->
+
+  <!-- testimonial start -->
+
   <!-- <div class="container-fluid douae-about-me" id="testimonial">
     <div id="my-carousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -325,7 +311,12 @@
       </ol>
     </div>
   </div> -->
-  <!-- <div class="container-fluid douae-insta-feed activity">
+
+  <!-- testimonial end -->
+
+  <!-- social media start -->
+
+  <div class="container-fluid douae-insta-feed activity">
     <div class="container recent">
       <div class="row mb-5 pb-5">
         <div class="col-lg-6">
@@ -362,17 +353,301 @@
       </div>
       <h2 class="text-center d-block">Find me on social media</h2>
       <div class="row social-links">
-        <ul class="nav mx-auto">
-          <li class="nav-item"> <a class="nav-link" href="https://www.facebook.com/douae"><img
-                src="assets/img/facebook.png" alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="https://twitter.com/douae"><img src="assets/img/twitter.png"
-                alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/pinterest.png" alt=""></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#"><img src="assets/img/google-plus.png" alt=""></a> </li>
-        </ul>
+        <a href="https://www.instagram.com/douaa_chairi/" target="_blank" class="button-social" aria-label="instagram">
+          <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+              fill-rule="evenodd" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a class="button-social" aria-label="whatsapp">
+          <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+              fill-rule="evenodd" fill="currentColor"></path>
+            <path
+              d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
+              fill="currentColor"></path>
+          </svg>
+        </a>
+
+        <a class="button-social" aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+          </svg>
+        </a>
+
+        <a class="button-social" aria-label="youtube">
+          <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </a>
+
+        <a class="button-social" aria-label="github">
+          <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+            <path clip-rule="evenodd"
+              d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </a>
+
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <!-- social media end -->
+
+  <!-- offers Start -->
+
+  <div class="container-fluid douae-Offers" id="packages">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-4 mb-5">
+          <div class="pack pack-basic">
+            <span class="badge"></span>
+            <p class="price">
+              $ 50
+            </p>
+            <ul class="lists">
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Connect 80 websites </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Connect up to 5 bank accounts </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x"
+                  viewBox="2 2 11 11">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span> Track up to 50 credit cards </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x"
+                  viewBox="2 2 11 11">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span> Analytics support </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x"
+                  viewBox="2 2 11 11">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span> Export up to 12 months data </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x"
+                  viewBox="2 2 11 11">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span> Cloud service 24/7 </span>
+              </li>
+            </ul>
+            <a href="#" class="action reserve" data-pack="basic">
+              Make a reservation
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 mb-5">
+          <div class="pack pack-standard">
+            <span class="badge"></span>
+            <p class="price">
+              $ 75
+            </p>
+            <ul class="lists">
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Connect 80 websites </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Connect up to 5 bank accounts </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Track up to 50 credit cards </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Analytics support </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x"
+                  viewBox="2 2 11 11">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span> Export up to 12 months data </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x"
+                  viewBox="2 2 11 11">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+                <span> Cloud service 24/7 </span>
+              </li>
+            </ul>
+            <a href="#" class="action reserve" data-pack="standard">
+              Make a reservation
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 mb-5">
+          <div class="pack pack-gold">
+            <span class="badge"></span>
+            <p class="price">
+              $ 100
+            </p>
+            <ul class="lists">
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Connect 80 websites </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Connect up to 5 bank accounts </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Track up to 50 credit cards </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Analytics support </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Export up to 12 months data </span>
+              </li>
+              <li class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#ffffff"
+                      d="M21.5821 5.54289C21.9726 5.93342 21.9726 6.56658 21.5821 6.95711L10.2526 18.2867C9.86452 18.6747 9.23627 18.6775 8.84475 18.293L2.29929 11.8644C1.90527 11.4774 1.89956 10.8443 2.28655 10.4503C2.67354 10.0562 3.30668 10.0505 3.70071 10.4375L9.53911 16.1717L20.1679 5.54289C20.5584 5.15237 21.1916 5.15237 21.5821 5.54289Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </g>
+                </svg>
+                <span> Cloud service 24/7 </span>
+              </li>
+            </ul>
+            <a href="#" class="action reserve" data-pack="gold">
+              Make a reservation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offers end -->
+
+
   <footer class="container-fluid p-0 pr-0">
     <div class="row mr-0 ml-0">
       <div class="col-md-6 pr-0 pl-0 map">
@@ -400,6 +675,84 @@
   <!-- Back top -->
   <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
 
+
+  <!-- reservation modal -->
+  <div class="modal fade" tabindex="-1" id="reservation-modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+              <form>
+                <div class="formbold-mb-5">
+                  <label for="name" class="formbold-form-label"> Full Name </label>
+                  <input type="text" name="name" id="name" placeholder="Full Name" class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                  <label for="phone" class="formbold-form-label"> Phone Number </label>
+                  <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                    class="formbold-form-input" />
+                </div>
+                <div class="formbold-mb-5">
+                  <label for="email" class="formbold-form-label"> Email Address </label>
+                  <input type="email" name="email" id="email" placeholder="Enter your email"
+                    class="formbold-form-input" />
+                </div>
+                <div class="flex flex-wrap formbold--mx-3">
+                  <div class="w-full sm:w-half formbold-px-3">
+                    <div class="formbold-mb-5 w-full">
+                      <label for="date" class="formbold-form-label"> Date </label>
+                      <input type="date" name="date" id="date" class="formbold-form-input" />
+                    </div>
+                  </div>
+                  <div class="w-full sm:w-half formbold-px-3">
+                    <div class="formbold-mb-5">
+                      <label for="time" class="formbold-form-label"> Time </label>
+                      <input type="time" name="time" id="time" class="formbold-form-input" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="formbold-mb-5 formbold-pt-3">
+                  <label class="formbold-form-label formbold-form-label-2">
+                    Package Details
+                  </label>
+                  <div class="flex flex-wrap formbold--mx-3">
+                    <div class="w-full sm:w-half formbold-px-3">
+                      <div class="formbold-mb-5">
+                        <input type="text" name="area" id="area" placeholder="Enter area" class="formbold-form-input" />
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                      <div class="formbold-mb-5">
+                        <input type="text" name="city" id="city" placeholder="Enter city" class="formbold-form-input" />
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                      <div class="formbold-mb-5">
+                        <input type="text" name="state" id="state" placeholder="Enter state"
+                          class="formbold-form-input" />
+                      </div>
+                    </div>
+                    <div class="w-full sm:w-half formbold-px-3">
+                      <div class="formbold-mb-5">
+                        <input type="text" name="post-code" id="post-code" placeholder="Post Code"
+                          class="formbold-form-input" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button class="formbold-btn">Book Appointment</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
   <script src="assets/js/jquery.js"></script>
@@ -410,6 +763,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/reservation.js"></script>
 
 </body>
 

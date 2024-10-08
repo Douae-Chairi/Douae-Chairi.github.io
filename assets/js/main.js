@@ -1,7 +1,5 @@
 jQuery(document).ready(function () {
 
-  console.log('main');
-
   // jQuery(".owl-carousel2").owlCarousel({
   //   loop: true,
   //   center: false,
@@ -75,12 +73,83 @@ jQuery(document).ready(function () {
   );
 
   jQuery('.button-camera').click(function () {
-    console.log('test');
-    // jQuery('html, body').animate({ scrollTop: 0 }, -300);
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#explore").offset().top
     }, 800);
   })
+
+  jQuery('.go-to-about').click(function (event) {
+    event.preventDefault()
+    $('.nav-item').removeClass('active')
+    $(event.target).parent('.nav-item').addClass('active')
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#explore").offset().top
+    }, 800);
+  })
+
+  jQuery('.go-to-portfolio').click(function (event) {
+    event.preventDefault()
+    $('.nav-item').removeClass('active')
+    $(event.target).parent('.nav-item').addClass('active')
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#portfolio").offset().top
+    }, 800);
+  })
+
+  jQuery('.go-To-Contact-nav').click(function (event) {
+    event.preventDefault()
+    $('.nav-item').removeClass('active')
+    $(event.target).parent('.nav-item').addClass('active')
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#contact").offset().top
+    }, 800);
+  })
+
+  jQuery('.go-To-Contact').click(function () {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#contact").offset().top
+    }, 800);
+  })
+
+  jQuery('.go-to-activities').click(function (event) {
+    event.preventDefault()
+    $('.nav-item').removeClass('active')
+    $(event.target).parent('.nav-item').addClass('active')
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#activity").offset().top
+    }, 800);
+  })
+
+  jQuery('.go-to-packages').click(function (event) {
+    event.preventDefault()
+    $('.nav-item').removeClass('active')
+    $(event.target).parent('.nav-item').addClass('active')
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#packages").offset().top
+    }, 800);
+  })
+
+  
+
+  jQuery('.go-to-home').click(function (event) {
+    event.preventDefault();
+    $('.nav-item').removeClass('active')
+    $(event.target).parent('.nav-item').addClass('active')
+    jQuery('html, body').animate({ scrollTop: 0 }, 800);
+  })
+
+  jQuery('.heart').click((event) => {
+    event.preventDefault();
+    if ($(event.target).hasClass('like')) {
+      $(event.target).removeClass('like')
+      $(event.target).attr("src", "assets/img/heart.png")
+    } else {
+      $(event.target).addClass('like')
+      $(event.target).attr("src", "assets/img/heart-full.png")
+    }
+
+  })
+
 
 });
 
