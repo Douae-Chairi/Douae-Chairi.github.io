@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "type": "basic",
+    "price": "500 MAD",
+    "offer": {
+      "lorem0": true,
+      "lorem1": true,
+      "lorem2": false,
+      "lorem3": false,
+      "lorem4": false,
+      "lorem5": false
+    }
+  },
+  {
+    "id": 1,
+    "type": "standard",
+    "price": "750 MAD",
+    "offer": {
+      "lorem0": true,
+      "lorem1": true,
+      "lorem2": true,
+      "lorem3": true,
+      "lorem4": false,
+      "lorem5": false
+    }
+  },
+  {
+    "id": 2,
+    "type": "gold",
+    "price": "1000 MAD",
+    "offer": {
+      "lorem0": true,
+      "lorem1": true,
+      "lorem2": true,
+      "lorem3": true,
+      "lorem4": true,
+      "lorem5": true
+    }
+  }
+]
