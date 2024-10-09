@@ -1,3 +1,3 @@
 jQuery(document).ready(() => {
-    jQuery('#overAllLoader').hide()
+    jQuery('#overAllLoader').fadeOut()
 })
