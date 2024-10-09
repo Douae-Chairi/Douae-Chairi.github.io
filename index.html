@@ -5,6 +5,10 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -13,6 +17,11 @@
 </head>
 
 <body>
+
+  <div id="overAllLoader">
+    <!-- <img src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" alt="processing..." /> -->
+    <div class="heartLoader"></div>
+  </div>
 
   <div id="pageloader">
     <!-- <img src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" alt="processing..." /> -->
@@ -323,7 +332,7 @@
 
   <div class="container-fluid douae-insta-feed activity">
     <div class="container recent">
-      <div class="row mb-5 pb-5">
+      <!-- <div class="row mb-5 pb-5">
         <div class="col-lg-6">
           <div class="twit-box">
             <div class="media mb-3"> <img class="align-self-start mr-3 rounded-circle"
@@ -355,7 +364,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <h2 class="text-center d-block">Find me on social media</h2>
       <div class="row social-links">
         <a href="https://www.instagram.com/douaa_chairi/" target="_blank" class="button-social" aria-label="instagram">
@@ -413,7 +422,8 @@
   <!-- offers Start -->
 
   <div class="container-fluid douae-Offers" id="packages">
-    <div class="container">
+    <div class="container text-center">
+      <h2>packages and services</h2>
       <div class="row" id="packagesContainer">
         <!-- <div class="col-sm-12 col-lg-4 mb-5">
           <div class="pack pack-basic">
@@ -664,10 +674,15 @@
       <div class="col-md-6 content-us">
         <div class="contact-form" id="contact">
           <h3 class="text-uppercase">Contact me</h3>
+          <div class="text-center">
+            <p>if you want to ask about something feel free to contact me</p>
+          </div>
+          <!-- <form action="" method="post" id="contactForm"> -->
           <input type="text" class="form-control" placeholder="Your Name">
           <input type="text" class="form-control" placeholder="Your Email">
           <textarea class="form-control" placeholder="Your Message"></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" id="sendContact">Send</button>
+          <!-- </form> -->
         </div>
       </div>
     </div>
@@ -773,6 +788,7 @@
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/reservation.js"></script>
+  <script src="assets/js/loader.js"></script>
 
 </body>
 

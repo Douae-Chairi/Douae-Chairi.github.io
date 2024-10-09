@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: My Soul
+- Font Author: Copyright 2016 The My Soul Project Authors (https://github.com/googlefonts/my-soul)
+- Font Source: https://fonts.gstatic.com/s/mysoul/v5/3XFqErcuy945_u6KF_Ulk2nnXf0.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

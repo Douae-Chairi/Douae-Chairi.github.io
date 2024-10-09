@@ -26,6 +26,82 @@
   background: #fc657b;
 }
 
+
+/* pre-heart */
+#overAllLoader {
+  background: black;
+  display: block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+#overAllLoader .heartLoader {
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: 50%;
+}
+
+/*heartLoader heartLoader */
+.heartLoader {
+  width: 7em;
+  height: 5em;
+  position: relative;
+  animation: beat 1s infinite;
+}
+
+.heartLoader::before,
+.heartLoader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  border-radius: 5em 5em 0 0;
+  animation: coldblue 1s infinite;
+}
+
+.heartLoader::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heartLoader::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes coldblue {
+
+  0%,
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+
+  50% {
+    background-color: rgb(198, 23, 23);
+  }
+}
+
 /* Colors */
 /* fonts variable */
 @font-face {
@@ -837,6 +913,11 @@ h2 {
 }
 
 .douae-portfolio h2 {
+  color: #584f53;
+  margin-bottom: 20px;
+}
+
+.douae-Offers h2 {
   color: #584f53;
   margin-bottom: 20px;
 }
