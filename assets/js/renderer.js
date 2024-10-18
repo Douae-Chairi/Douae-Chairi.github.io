@@ -87,20 +87,33 @@ jQuery(document).ready(function () {
             }
         }
 
-        let html = `<div class="col-sm-12 col-lg-4 mb-5">
-        <div class="pack pack-${data.type}">
-          <span class="badge"></span>
-          <p class="price">
-            ${data.price}
-          </p>
-          <ul class="lists">
-            ${lists}
-          </ul>
-          <a href="#" class="action reserve" data-pack="${data.type}" data-id="${data.id}">
-            Make a reservation
-          </a>
-        </div>
-      </div>`
+    //     let html = `<div class="col-sm-12 col-lg-4 mb-5">
+    //     <div class="pack pack-${data.type}">
+    //       <span class="badge"></span>
+    //       <p class="price">
+    //         ${data.price}
+    //       </p>
+    //       <ul class="lists">
+    //         ${lists}
+    //       </ul>
+    //       <a href="#" class="action reserve" data-pack="${data.type}" data-id="${data.id}">
+    //         Make a reservation
+    //       </a>
+    //     </div>
+    //   </div>`
+
+
+    let html = `<div class="col-sm-12 col-lg-4 mb-5">
+    <div class="pack pack-${data.type}">
+      <span class="badge"></span>
+      <ul class="lists">
+        ${lists}
+      </ul>
+      <a href="#" class="action reserve" data-pack="${data.type}" data-id="${data.id}">
+        Make a reservation
+      </a>
+    </div>
+  </div>`
 
         return html
 
@@ -155,9 +168,6 @@ jQuery(document).ready(function () {
             let type = jQuery(e.target).data('pack')
             let id = jQuery(e.target).data('id')
 
-            console.log(type);
-            console.log(id);
-
             $('#reservation-modal').modal('show')
 
             // switch (type) {
@@ -178,6 +188,26 @@ jQuery(document).ready(function () {
 
     }).catch((e) => {
         console.error(e);
+    })
+
+    jQuery('#sony').on('click', (e) => {
+        e.preventDefault()
+        $('#offer-modal').modal('show')
+
+        // switch (type) {
+        //     case "basic":
+
+        //         break;
+        //     case "standard":
+
+        //         break;
+        //     case "gold":
+
+        //         break;
+        //     default:
+        //         console.error('unknown type');
+        //         break;
+        // }
     })
 
 

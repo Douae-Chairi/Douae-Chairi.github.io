@@ -1661,6 +1661,23 @@ footer .copy a:hover {
 /* packs css end */
 
 
+/* packs new css start  */
+
+#packagesContainerNew img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+#packagesContainerNew #iphone{
+  filter: drop-shadow(1em 1em 2em gold);
+}
+
+#packagesContainerNew #sony{
+  filter: drop-shadow(1em 1em 2em black);
+}
+
+
+
 @media (max-width: 1199px) {
   footer .contact-form {
     margin: 50px auto;
