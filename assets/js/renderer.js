@@ -87,31 +87,31 @@ jQuery(document).ready(function () {
             }
         }
 
-    //     let html = `<div class="col-sm-12 col-lg-4 mb-5">
-    //     <div class="pack pack-${data.type}">
-    //       <span class="badge"></span>
-    //       <p class="price">
-    //         ${data.price}
-    //       </p>
-    //       <ul class="lists">
-    //         ${lists}
-    //       </ul>
-    //       <a href="#" class="action reserve" data-pack="${data.type}" data-id="${data.id}">
-    //         Make a reservation
-    //       </a>
-    //     </div>
-    //   </div>`
+        //     let html = `<div class="col-sm-12 col-lg-4 mb-5">
+        //     <div class="pack pack-${data.type}">
+        //       <span class="badge"></span>
+        //       <p class="price">
+        //         ${data.price}
+        //       </p>
+        //       <ul class="lists">
+        //         ${lists}
+        //       </ul>
+        //       <a href="#" class="action reserve" data-pack="${data.type}" data-id="${data.id}">
+        //         Make a reservation
+        //       </a>
+        //     </div>
+        //   </div>`
 
 
-    let html = `<div class="col-sm-12 col-lg-4 mb-5">
+        let html = `<div class="col-sm-12 col-lg-4 mb-5">
     <div class="pack pack-${data.type}">
       <span class="badge"></span>
       <ul class="lists">
         ${lists}
       </ul>
-      <a href="#" class="action reserve" data-pack="${data.type}" data-id="${data.id}">
-        Make a reservation
-      </a>
+      <a href="#" class="action" data-pack="${data.type}" data-id="${data.id}">
+        Choose This Package
+        </a>
     </div>
   </div>`
 
@@ -163,53 +163,33 @@ jQuery(document).ready(function () {
             packagesContainer.append(card)
         });
 
-        jQuery('.reserve').on('click', (e) => {
+        jQuery('.action').on('click', (e) => {
             e.preventDefault()
             let type = jQuery(e.target).data('pack')
             let id = jQuery(e.target).data('id')
 
-            $('#reservation-modal').modal('show')
+            // $('#reservation-modal').modal('show')
 
-            // switch (type) {
-            //     case "basic":
+            jQuery('.action').removeClass('reserved')
+            jQuery(e.target).addClass('reserved')
 
-            //         break;
-            //     case "standard":
-
-            //         break;
-            //     case "gold":
-
-            //         break;
-            //     default:
-            //         console.error('unknown type');
-            //         break;
-            // }
+            switch (type) {
+                case "basic":
+                    jQuery(e.target).addClass('basic')
+                    break;
+                case "standard":
+                    jQuery(e.target).addClass('standard')
+                    break;
+                case "gold":
+                    jQuery(e.target).addClass('gold')
+                    break;
+                default:
+                    console.error('unknown type');
+                    break;
+            }
         })
 
     }).catch((e) => {
         console.error(e);
     })
-
-    jQuery('#sony').on('click', (e) => {
-        e.preventDefault()
-        $('#offer-modal').modal('show')
-
-        // switch (type) {
-        //     case "basic":
-
-        //         break;
-        //     case "standard":
-
-        //         break;
-        //     case "gold":
-
-        //         break;
-        //     default:
-        //         console.error('unknown type');
-        //         break;
-        // }
-    })
-
-
-
 })

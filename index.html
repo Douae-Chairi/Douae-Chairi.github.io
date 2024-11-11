@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
   <link rel="stylesheet" href="assets/css/testimonial.css">
+  <link rel="stylesheet" href="assets/css/checkbox.css">
   <!-- <link rel="stylesheet" href="assets/css/cube.css"> -->
   <!-- <link rel="stylesheet" href="assets/css/scroll.css"> -->
   <link rel="stylesheet" href="assets/css/reservation.css">
@@ -54,8 +55,8 @@
           <li class="nav-item"> <a class="nav-link go-to-packages" href="#packages" tabindex="-1"
               aria-disabled="true">Packages</a>
           </li>
-          <!-- <li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1"
-              aria-disabled="true">Testimonial</a></li> -->
+          <li class="nav-item"> <a class="nav-link" href="#testimonial" tabindex="-1"
+              aria-disabled="true">Testimonial</a></li>
           <!-- <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Blog</a></li> -->
           <li class="nav-item"> <a class="nav-link go-To-Contact-nav" href="#contact" tabindex="-1"
               aria-disabled="true">Contact</a></li>
@@ -404,7 +405,7 @@
   <div class="container-fluid douae-Offers" id="packages">
     <div class="container text-center">
       <h2>packages and services</h2>
-      <div class="row" id="packagesContainer">
+      <div class="row mb-5" id="packagesContainer">
         <!-- <div class="col-sm-12 col-lg-4 mb-5">
           <div class="pack pack-basic">
             <span class="badge"></span>
@@ -638,12 +639,57 @@
         </div> -->
       </div>
 
-      <div class="row" id="packagesContainerNew">
-        <div class="col-md-6 pr-0 pl-0 align-content-center">
-          <img id="iphone" src="./assets/img/iphone_back.png" alt="iphone 13 pro max">
-        </div>
-        <div class="col-md-6 pr-0 pl-0 align-content-center">
+      <h2 class="mb-5">Choose Your device</h2>
+      <div class="row mb-5 mt-3" id="packagesContainerNew">
+
+        <!-- <div class="col-md-6 pr-0 pl-0 align-content-center">
+          <h3>Iphone</h3>
+          <img id="iphone" src="./assets/img/iphone_back.png" alt="iphone 13 pro max"><br>
+        </div> -->
+
+        <!-- <div class="col-md-6 pr-0 pl-0 align-content-center">
+          <h3>Camera (sony 7iii)</h3>
           <img id="sony" src="./assets/img/sony_face.png" alt="sony 7iii">
+        </div> -->
+
+        <div class="col-md-6 pr-0 pl-0 align-content-center mb-5">
+          <div class="checkbox-wrapper-16" id="iphone-wrapper">
+            <label class="checkbox-wrapper">
+              <input class="checkbox-input" type="radio" name="device" id="IphonePhone" value="Iphone">
+              <span class="checkbox-tile">
+                <span class="checkbox-icon">
+                  <img id="iphone" src="./assets/img/iphone_back.png" alt="iphone 13 pro max"><br>
+                </span>
+                <span class="checkbox-label">Iphone</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="col-md-6 pr-0 pl-0 align-content-center mb-5">
+          <div class="checkbox-wrapper-16" id="sony-wrapper">
+            <label class="checkbox-wrapper">
+              <input class="checkbox-input" type="radio" name="device" id="camera7iii" value="Camera Sony 7iii">
+              <span class="checkbox-tile">
+                <span class="checkbox-icon">
+                  <img id="sony" src="./assets/img/sony_face.png" alt="sony 7iii">
+                </span>
+                <span class="checkbox-label">Camera (sony 7iii)</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="col pr-0 pl-0 align-content-center">
+          <button id="ReservationButton">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Make a reservation
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -794,11 +840,11 @@
                   <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
                     class="formbold-form-input" required />
                 </div>
-                <div class="formbold-mb-5">
+                <!-- <div class="formbold-mb-5">
                   <label for="email" class="formbold-form-label"> Email Address </label>
                   <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input"
                     required />
-                </div>
+                </div> -->
                 <div class="flex flex-wrap formbold--mx-3">
                   <div class="w-full sm:w-half formbold-px-3">
                     <div class="formbold-mb-5 w-full">
@@ -813,6 +859,22 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="formbold-mb-5">
+                  <div class="page">
+                    <div class="margin"></div>
+                    <p>Your Order :</p>
+                    <p id="packageOrder"></p>
+                    <p id="deviceOrder"></p>
+                  </div>
+                </div>
+
+                <input type="text" name="orderDevice" id="orderDevice" class="formbold-form-input d-none" />
+
+                <input type="text" name="orderPackage" id="orderPackage" class="formbold-form-input d-none" />
+
+
+
 
                 <!-- <div class="formbold-mb-5 formbold-pt-3">
                   <label class="formbold-form-label formbold-form-label-2">

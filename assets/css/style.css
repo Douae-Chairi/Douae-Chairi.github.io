@@ -1495,6 +1495,24 @@ footer .copy a:hover {
   transition: all .2s ease;
 }
 
+.action.reserved.basic {
+  border: 2px solid gray;
+  background-color: gray;
+  color: black;
+}
+
+.action.reserved.standard {
+  border: 2px solid cyan;
+  background-color: cyan;
+  color: rgb(255, 255, 255);
+}
+
+.action.reserved.gold {
+  border: 2px solid gold;
+  background-color: gold;
+  color: black;
+}
+
 
 /* pack basic css start */
 .pack-basic {
