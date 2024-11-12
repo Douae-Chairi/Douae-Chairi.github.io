@@ -1256,8 +1256,9 @@ h2 {
 }
 
 .twit-box a {
-  background-color: #03a9f4;
-  border-color: #03a9f4;
+  /* background-color: #03a9f4;
+  border-color: #03a9f4; */
+  background: linear-gradient(120deg, #833ab4, #fd1d1d, #fcb045);
   width: 120px;
   padding: 5px 0;
   border-radius: 40px;
@@ -1265,7 +1266,7 @@ h2 {
 
 .twit-box a:hover,
 .twit-box a:visited {
-  background-color: #0286c2;
+  background-color: red;
 }
 
 .twit-box::before {
@@ -1704,8 +1705,8 @@ footer .copy a:hover {
 
 @media (max-width: 767px) {
   footer .map {
-    /* min-height: 300px; */
-    display: none;
+    min-height: 300px;
+    /* display: none; */
   }
 }
 

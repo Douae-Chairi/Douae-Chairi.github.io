@@ -32,7 +32,8 @@ var testiomnialData = [
         avatar: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg",
         name: "Marys Lobb",
         review: "Life-altering find! Indispensable now. Enthusiastically suggest to all. A game-changer for everyone!"
-    }]
+    }
+]
 var slideHolder = document.querySelector("#slideHolder")
 for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
 
